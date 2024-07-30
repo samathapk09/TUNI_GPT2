@@ -1,0 +1,82 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - custom_tunii
+  - product_links
+  - provide_product_info
+  - request_product_info
+  - show_available_dress
+  - show_men_dress
+  - show_pant
+  - jogger_pant
+  - shirt
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+  
+  utter_custom_tunii_links:
+    - text: "Showing the half and T-shirt"
+      
+  utter_product_links:
+    - text: |
+        1720074722477::https://firebasestorage.googleapis.com/v0/b/tunitest-e022d.appspot.com/o/product_images%2F_1720074722477?alt=media&token=c1931d80-29ab-4d2f-a325-7303de97b00d
+        1715434913436::https://firebasestorage.googleapis.com/v0/b/tunitest-e022d.appspot.com/o/product_images%2F_1715434913436?alt=media&token=05286d80-35ea-4852-983d-43227b799523
+        1715422949161::https://firebasestorage.googleapis.com/v0/b/tunitest-e022d.appspot.com/o/product_images%2F%20T-SHIRTS_1715422895058?alt=media&token=89bbaf24-79a2-4967-89fc-311d663595af
+
+  utter_show_available_dress:
+    - text: "Sure, Do you want to see Dress for Men or Women or Kids ?"
+        
+
+  utter_show_men_dress:
+    - text: "Sure, here are the Men products: \nPant\nshirt\nTshirt\nshort"
+        
+
+  utter_show_pant:
+    - text: |
+        Sure, showing the results of Men Pant.
+        jogger
+        jeans
+        six pocket
+
+  utter_jogger_pant:
+    - text: |
+        1715434607008::https://firebasestorage.googleapis.com/v0/b/tunitest-e022d.appspot.com/o/product_images%2F_1715434607008?alt=media&token=7281d92c-834d-47f8-8cdf-8ed4d8bdd5e0
+
+  utter_product_info:
+    - text: |
+        Here is the product information:
+        - Product ID: 1720074722477
+        - Product Link: https://firebasestorage.googleapis.com/v0/b/tunitest-e022d.appspot
+
+   
+
+slots:
+  pid:
+    type: text
+    mappings:
+      - type: from_text
+  link:
+    type: text
+    mappings:
+      - type: from_text     

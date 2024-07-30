@@ -1,0 +1,52 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Hi
+      - Hello
+      - Hey
+
+  - intent: goodbye
+    examples: |
+      - Bye
+      - See you later
+      - Goodbye
+
+  - intent: request_product_info
+    examples: |
+      - Tell me about the product
+      - What is the product information?
+      - Give me details about the product
+
+  - intent: provide_product_info
+    examples: |
+      - show half and T-shirts
+      - half T-shirts
+      - Tshirts
+
+  - intent: show_available_dress
+    examples: |
+       - show available dress
+      
+
+  - intent: show_men_dress
+    examples: |
+      - Show Men Dress
+      - Men
+
+  - intent: show_pant
+    examples: |
+      - pant 
+
+  - intent: jogger_pant
+    examples: |
+      - jogger   
+
+  - intent: shirt
+    examples: |
+      - full sleve
+      - half sleve
+      - collar
+      - round neck
+      - v-neck
